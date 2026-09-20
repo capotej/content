@@ -29,7 +29,7 @@ Significant changes, architectural decisions, and new features should be propose
 Then in a fresh session I'll prompt:
 
 #quote(block: true)[
-"Let's create a new RFC to _insert goal here_. Ask me any questions to disambiguate the plan"
+  "Let's create a new RFC to _insert goal here_. Ask me any questions to disambiguate the plan"
 ]
 
 (I'd imagine #link("https://github.com/mattpocock/skills/blob/main/skills/productivity/grill-me/SKILL.md")[grill-me] would work well here too).

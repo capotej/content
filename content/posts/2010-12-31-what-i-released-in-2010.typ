@@ -19,7 +19,9 @@ I couldn’t find a youtube downloader that worked on github, so I wrote my own 
 
 I wanted to upload and store images off-site (using paperclip/rails) on an server which has cheaper bandwidth rates than S3. Using rainbows, this tiny rack script has handled over a 1.5 million uploads at a peak of 10-15 uploads/sec. Also, it’s been running for about 6 months now without a single crash. Thank you Eric Wong! There is also a plugin for the popular paperclip gem to use uploadd as a storage backend transparently.
 
-==== #link("https://github.com/capotej/mrskinner/blob/master/mrskinner.js")[mrskinner]
+==== #link(
+  "https://github.com/capotej/mrskinner/blob/master/mrskinner.js",
+)[mrskinner]
 
 Tiny javascript for making the site gutters clickable based on a fixed width layout
 

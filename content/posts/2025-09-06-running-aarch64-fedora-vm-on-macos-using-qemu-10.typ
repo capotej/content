@@ -92,11 +92,17 @@ $ sh start.sh
 
 You should see a window open up like so:
 
-#html.elem("img", attrs: (src: "/assets/2025-09-06-qemu-vm-1.png", alt: "Screenshot 2025-09-06 at 3.12.26 PM.png"))
+#html.elem("img", attrs: (
+  src: "/assets/2025-09-06-qemu-vm-1.png",
+  alt: "Screenshot 2025-09-06 at 3.12.26 PM.png",
+))
 
 Then you'll see it say "Display output is not active.", this is okay, just wait a bit, eventually you will see the machine boot.
 
-#html.elem("img", attrs: (src: "/assets/2025-09-06-qemu-vm-2.png", alt: "Screenshot 2025-09-06 at 3.13.30 PM.png"))
+#html.elem("img", attrs: (
+  src: "/assets/2025-09-06-qemu-vm-2.png",
+  alt: "Screenshot 2025-09-06 at 3.13.30 PM.png",
+))
 
 ==== Configure Fedora Server
 

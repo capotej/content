@@ -1,7 +1,7 @@
 #let meta = (
   title: "Finagle with scala-bootstrapper",
   date: "2012-01-25",
-  tags: ("scala"),
+  tags: "scala",
   draft: false,
   redirect_from: "/blog/2012/01/25/finagle-with-scala-bootstrapper",
 )
@@ -60,16 +60,16 @@ import org.apache.thrift.protocol.TBinaryProtocol
 
 import java.net.InetSocketAddress
 
-class Client {  
+class Client {
 
   val service = ClientBuilder().hosts(Seq(newInetSocketAddress("localhost",9999)))
-    .codec(ThriftClientFramedCodec())    
-    .hostConnectionLimit(1)    
-    .build()  
+    .codec(ThriftClientFramedCodec())
+    .hostConnectionLimit(1)
+    .build()
   val client = new NewbirdServiceClientAdapter(
-    new thrift.NewbirdService.ServiceToClient(service,newTBinaryProtocol.Factory))  
+    new thrift.NewbirdService.ServiceToClient(service,newTBinaryProtocol.Factory))
 
-  def get(key:String) = client.get(key)()  
+  def get(key:String) = client.get(key)()
   def put(key:String, value:String) = client.put(key,value)()
 
 }
@@ -99,29 +99,29 @@ finagle exports a stats url you can curl:
 
 ```shell
 $ curl http://localhost:9900/stats.txt
-counters:  Newbird/connects: 1  
-Newbird/requests: 4  
+counters:  Newbird/connects: 1
+Newbird/requests: 4
 Newbird/success: 4
-gauges:  
-  Newbird/connections: 0  
-  Newbird/pending: 0  
-  jvm_heap_committed: 588251136  
-  jvm_heap_max: 2146828288  
-  jvm_heap_used: 64354560  
-  jvm_nonheap_committed: 83267584  
-  jvm_nonheap_max: 318767104  
-  jvm_nonheap_used: 68655360  
-  jvm_num_cpus: 4  
-  jvm_start_time: 1327511164928  
-  jvm_thread_count: 14  
-  jvm_thread_daemon_count: 9  
-  jvm_thread_peak_count: 14  
+gauges:
+  Newbird/connections: 0
+  Newbird/pending: 0
+  jvm_heap_committed: 588251136
+  jvm_heap_max: 2146828288
+  jvm_heap_used: 64354560
+  jvm_nonheap_committed: 83267584
+  jvm_nonheap_max: 318767104
+  jvm_nonheap_used: 68655360
+  jvm_num_cpus: 4
+  jvm_start_time: 1327511164928
+  jvm_thread_count: 14
+  jvm_thread_daemon_count: 9
+  jvm_thread_peak_count: 14
   jvm_uptime: 2626505
 labels:
-  metrics:  
-    Newbird/connection_duration: (average=2590412, count=1, maximum=2590412, minimum=2590412, p25=2590412, p50=2590412, p75=2590412, p90=2590412, p99=2590412, p999=2590412, p9999=2590412)  
-    Newbird/connection_received_bytes: (average=192, count=1, maximum=192, minimum=192, p25=192, p50=192, p75=192, p90=192, p99=192, p999=192, p9999=192)  
-    Newbird/connection_requests: (average=4, count=1, maximum=4, minimum=4, p25=4, p50=4, p75=4, p90=4, p99=4, p999=4, p9999=4)  
-    Newbird/connection_sent_bytes: (average=120, count=1, maximum=120, minimum=120, p25=120, p50=120, p75=120, p90=120, p99=120, p999=120, p9999=120)  
+  metrics:
+    Newbird/connection_duration: (average=2590412, count=1, maximum=2590412, minimum=2590412, p25=2590412, p50=2590412, p75=2590412, p90=2590412, p99=2590412, p999=2590412, p9999=2590412)
+    Newbird/connection_received_bytes: (average=192, count=1, maximum=192, minimum=192, p25=192, p50=192, p75=192, p90=192, p99=192, p999=192, p9999=192)
+    Newbird/connection_requests: (average=4, count=1, maximum=4, minimum=4, p25=4, p50=4, p75=4, p90=4, p99=4, p999=4, p9999=4)
+    Newbird/connection_sent_bytes: (average=120, count=1, maximum=120, minimum=120, p25=120, p50=120, p75=120, p90=120, p99=120, p999=120, p9999=120)
     Newbird/request_latency_ms: (average=14, count=4, maximum=39, minimum=2, p25=2, p50=8, p75=10, p90=39, p99=39, p999=39, p9999=39)
 ```

@@ -78,7 +78,7 @@ jar cf sinatra.jar -C sinatra .
     require 'rubygems'
     require './lib/sinatra_app'
     map '/api' do
-      run MyApp 
+      run MyApp
     end
   </param-value>
 </context-param>

@@ -29,7 +29,10 @@ For groupcache to work, you have to give it a closure in which: given a `key`, f
 
 In order to really try out groupcache, I realized I needed to create a mini test infrastructure, consisting of a slow database, frontends, and a client. Visit the #link("http://github.com/capotej/groupcache-db-experiment")[Github Repo] for more details. This is what the topology looks like:
 
-#html.elem("img", attrs: (src: "/assets/2013-07-28-groupcache-topology.png", alt: "groupcache topology"))
+#html.elem("img", attrs: (
+  src: "/assets/2013-07-28-groupcache-topology.png",
+  alt: "groupcache topology",
+))
 
 ===== Setup
 

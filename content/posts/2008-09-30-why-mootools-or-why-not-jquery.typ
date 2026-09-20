@@ -27,7 +27,7 @@ I’ve been toying around with MooTools a bit lately, and I’ve found the exper
 
 - Easier to hack on and extend. While I haven’t personally delved into the internals of either system, the consensus seems to be that jquery is an unintelligible mess when it comes to modifying how it works.
 
-- Prototype Approach (versus a namespaced approach) This is really just matter of preference; MooTools achieves it’s magic by just extending the prototypes of common objects (Array, String, etc); While this is obstrusive, it makes for shorter, more natural code. JQuery does its thing via a main object (which you can name, hence the namespace), that you wrap around whatever you want to make magical; This is unobstrusive, but you pay for that by having to wrap anything you want to use (which ends up being everything). It basically boils down to arr.each(fn) vs \$.each(arr, fn)
+- Prototype Approach (versus a namespaced approach) This is really just matter of preference; MooTools achieves it’s magic by just extending the prototypes of common objects (Array, String, etc); While this is obstrusive, it makes for shorter, more natural code. JQuery does its thing via a main object (which you can name, hence the namespace), that you wrap around whatever you want to make magical; This is unobtrusive, but you pay for that by having to wrap anything you want to use (which ends up being everything). It basically boils down to arr.each(fn) vs \$.each(arr, fn)
 
 - It’s not a revolution. It feels as if JQuery is trying to take on the world (it seems like it too, since its now included with visual studio and the nokia sdk). However, I’m not; I’m just trying to write some javascript here.
 
