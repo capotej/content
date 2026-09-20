@@ -47,7 +47,7 @@ When you use map.resources, rails generates 7 restful routes for that resource; 
 map.resources :photos, :only => [:index, :show]
 ```
 
-If your application uses a lot of `map.resources` calls but not neccesarily all its generated routes, you can save memory this way.
+If your application uses a lot of `map.resources` calls but not necessarily all its generated routes, you can save memory this way.
 
 ==== Adding extra routes to your resources
 

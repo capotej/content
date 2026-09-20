@@ -27,7 +27,7 @@ The `toFuture` call means that the response is actually a #link("http://twitter.
 Testing it is just as easy:
 
 ```scala
-"GET /user/foo" should "responsd with hello foo" in {
+"GET /user/foo" should "responds with hello foo" in {
   get("/user/foo")
   response.body should equal ("hello foo")
 }
@@ -51,7 +51,7 @@ $ mvn scala:run
 A simple app should've started up locally on port 7070, verify with:
 
 ```shell
-$ curl http://locahost:7070
+$ curl http://localhost:7070
 hello world
 ```
 

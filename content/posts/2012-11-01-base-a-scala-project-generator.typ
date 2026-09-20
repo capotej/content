@@ -23,10 +23,10 @@ creating project: newproj
   creating .travis.yml
   creating LICENSE
   creating README.markdown
-Done! run mvn scala:run to run your projec
+Done! run mvn scala:run to run your project
 ```
 
-Based on the package name, it infered that the project name is `newproj` and created the project under that folder. Let's build and run it:
+Based on the package name, it inferred that the project name is `newproj` and created the project under that folder. Let's build and run it:
 
 ```shell
 $ cd newproj
