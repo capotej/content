@@ -8,7 +8,7 @@
 
 = Hello, world
 
-This is the first post in a fresh content-repo. The body is authored in
+Hello, This is the first post in a fresh content-repo. The body is authored in
 *Typst* markup and rendered to plain semantic HTML by the pinned typst
 compiler — no CSS, no framework, just a page shell.
 
