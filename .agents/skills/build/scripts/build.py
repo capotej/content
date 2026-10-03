@@ -23,6 +23,8 @@ REPO = Path(__file__).resolve().parents[4]
 CONTENT = REPO / "content"
 ASSETS = REPO / "assets"
 BUILD = REPO / "build"
+THEME = REPO / "theme"
+WRAPPER = THEME / "wrapper.typ"
 
 META_EXPR = "query(metadata).map(it => it.value)"
 
@@ -39,6 +41,9 @@ SHELL = """<!doctype html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{title}</title>
+<style>
+{style}
+</style>
 </head>
 <body>
 {nav}
@@ -47,6 +52,21 @@ SHELL = """<!doctype html>
 </main>
 </body>
 </html>
+"""
+
+# SPIKE tier-2 theme: typst owns code colors at compile time (theme/wrapper.typ
+# + theme/catppuccin.tmTheme via #set raw(theme:...)); CSS owns only the page
+# chrome typst's semantic HTML export cannot express (fonts, bg, spacing).
+STYLE = """
+:root { color-scheme: dark; }
+body { background: #1e1e2e; color: #cdd6f4; font-family: Georgia, serif;
+       max-width: 42rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.6; }
+nav { margin-bottom: 2rem; }
+nav a { color: #89b4fa; margin-right: 0.75rem; text-decoration: none; }
+a { color: #89b4fa; }
+pre { background: #11111b; padding: 0.75rem 1rem; border-radius: 6px;
+      overflow-x: auto; }
+code { font-family: ui-monospace, monospace; font-size: 0.9em; }
 """
 
 ATOM_ENTRY = """<entry>
@@ -107,8 +127,13 @@ def read_meta(path, cmd, env):
 
 
 def compile_body(path, cmd, env):
-    out = run(cmd + ["compile", str(path), "--features", "html",
-                     "--format", "html", "-"], env,
+    # SPIKE tier-2: compile through theme/wrapper.typ so its #set rules (code
+    # theme) apply; --input passes the target; --root keeps root-absolute
+    # content paths and /assets refs resolving.
+    rel = "/" + str(path.relative_to(REPO))
+    out = run(cmd + ["compile", str(WRAPPER), "--root", str(REPO),
+                     "--input", "target=" + rel,
+                     "--features", "html", "--format", "html", "-"], env,
               "compiling " + str(path))
     m = re.search(r"<body>(.*)</body>", out, re.DOTALL)
     if not m:
@@ -128,7 +153,8 @@ def split_dated(stem, rel):
 
 def page(path, title, body):
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(SHELL.format(title=h(title), nav=NAV, body=body), "utf-8")
+    path.write_text(
+        SHELL.format(title=h(title), nav=NAV, body=body, style=STYLE), "utf-8")
 
 
 def collect():
