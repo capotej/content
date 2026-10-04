@@ -8,7 +8,7 @@
   color-scheme: light;
 
   /* ---- typography knobs (the font is part of the theme; edit here) ---- */
-  --font-body: Georgia, "Times New Roman", serif;
+  --font-body: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --font-code: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
   --font-size: 1rem;          /* master size; code scales via em */
   --line-height: 1.6;
