@@ -1,11 +1,17 @@
 #let meta = (
   title: "Announcing Finatra 1.0.0",
   date: "2012-11-07",
+  created: "2012-11-07 21:20:00",
+  updated: "2025-01-28 01:49:13",
   tags: ("finatra", "scala"),
   draft: false,
   redirect_from: "/blog/2012/11/07/announcing-finatra-1-0-0",
 )
 #context metadata((meta))
+
+#let excerpt = [
+  After months of work #link("https://github.com/capotej/finatra#readme")[Finatra] 1.0.0 is finally available! Finatra is a scala web framework inspired by #link("https://github.com/sinatra/sinatra#readme")[Sinatra] built on top of #link("http://twitter.github.com/finagle")[Finagle].
+]
 
 = Announcing Finatra 1.0.0
 

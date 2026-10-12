@@ -1,11 +1,17 @@
 #let meta = (
   title: "Using Rack applications inside GWT Hosted mode",
   date: "2009-07-19",
+  created: "2009-07-19 18:51:00",
+  updated: "2025-01-26 13:48:33",
   tags: (),
   draft: false,
   redirect_from: "/blog/2009/07/19/using-rack-applications-inside-gwt-hosted-mode",
 )
 #context metadata((meta))
+
+#let excerpt = [
+  This guide will show you how you can use JRuby to run any Rack application inside Google Web Toolkit’s (GWT) hosted mode server so your
+]
 
 = Using Rack applications inside GWT Hosted mode
 

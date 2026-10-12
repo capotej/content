@@ -1,11 +1,17 @@
 #let meta = (
   title: "Base: A Scala Project Generator",
   date: "2012-11-01",
+  created: "2012-11-01 14:39:00",
+  updated: "2025-01-28 01:49:46",
   tags: ("efficiency", "scala", "shell-scripting"),
   draft: false,
   redirect_from: "/blog/2012/11/01/base-a-scala-project-generator",
 )
 #context metadata((meta))
+
+#let excerpt = [
+  Finally got tired of copy pasting other projects and gutting them to make new ones, so I created #link("http://github.com/capotej/base")[base], a shell command that creates new scala projects.
+]
 
 = Base: A Scala Project Generator
 

@@ -1,11 +1,17 @@
 #let meta = (
   title: "Render image links directly inside Adium",
   date: "2011-09-13",
+  created: "2011-09-13 08:59:00",
+  updated: "2025-01-28 01:54:10",
   tags: (),
   draft: false,
   redirect_from: "/blog/2011/09/13/render-image-links-directly-inside-adium",
 )
 #context metadata((meta))
+
+#let excerpt = [
+  Last night I delightfully discovered that Adium Message Styles are just html, css, and javascript rendered inside a webview.
+]
 
 = Render image links directly inside Adium
 

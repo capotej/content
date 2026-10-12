@@ -1,11 +1,17 @@
 #let meta = (
   title: "Running an aarch64 Fedora VM on MacOS using QEMU 10",
   date: "2025-09-06",
+  created: "2025-09-06 18:47:34",
+  updated: "2025-09-07 01:23:49",
   tags: ("linux", "macos", "vm"),
   draft: false,
   redirect_from: "/blog/2025/09/06/running-aarch64-fedora-vm-on-macos-using-qemu-10",
 )
 #context metadata((meta))
+
+#let excerpt = [
+  This was surprisingly tricky to figure out since I had to consult a combination of QEMU docs, StackOverflow and GitHub issues, many of which had outdated arguments and options, or didn't apply for `aarch64`/`arm` architectures. Writing out the steps that worked for me as a guide in case they help others.
+]
 
 = Running an aarch64 Fedora VM on MacOS using QEMU 10
 

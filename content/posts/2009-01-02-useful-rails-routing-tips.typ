@@ -1,11 +1,17 @@
 #let meta = (
   title: "Useful Rails Routing tips",
   date: "2009-01-02",
+  created: "2009-01-02 15:50:00",
+  updated: "2025-01-26 13:48:33",
   tags: (),
   draft: false,
   redirect_from: "/blog/2009/01/02/useful-rails-routing-tips",
 )
 #context metadata((meta))
+
+#let excerpt = [
+  Even though I have been using Rails for fun and profit for about 2 years now, I felt I never really used it’s routing engine
+]
 
 = Useful Rails Routing tips
 

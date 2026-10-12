@@ -1,11 +1,17 @@
 #let meta = (
   title: "An Embedded Key/Value Store for Shell Scripts",
   date: "2012-10-07",
+  created: "2012-10-07 10:06:00",
+  updated: "2025-01-28 01:51:03",
   tags: ("databases", "shell-scripting"),
   draft: false,
   redirect_from: "/blog/2012/10/07/an-embedded-key-value-store-for-shell-scripts",
 )
 #context metadata((meta))
+
+#let excerpt = [
+  Cooked this up last night when I needed a simple key/value store for use in a shell script.
+]
 
 = An Embedded Key/Value Store for Shell Scripts
 

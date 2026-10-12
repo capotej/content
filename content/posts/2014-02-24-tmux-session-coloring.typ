@@ -1,11 +1,17 @@
 #let meta = (
   title: "Tmux Session Coloring",
   date: "2014-02-24",
+  created: "2014-02-24 00:00:00",
+  updated: "2025-01-27 14:23:55",
   tags: ("shell-scripting", "tmux"),
   draft: false,
   redirect_from: "/blog/2014/02/24/tmux-session-coloring",
 )
 #context metadata((meta))
+
+#let excerpt = [
+  Recently, I've really gotten into tmux for managing all my terminal sessions/windows. Not so much for the panes, but more for keeping a highly contextual environment per project or task.
+]
 
 = Tmux Session Coloring
 

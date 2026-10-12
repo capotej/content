@@ -1,11 +1,17 @@
 #let meta = (
   title: "So you want to click that button?",
   date: "2008-10-28",
+  created: "2008-10-28 21:05:00",
+  updated: "2025-01-26 13:48:33",
   tags: (),
   draft: false,
   redirect_from: "/blog/2008/10/28/so-you-want-to-click-that-button",
 )
 #context metadata((meta))
+
+#let excerpt = [
+  I stumbled upon#link("http://clickthatbutton.com")[http:\/\/clickthatbutton.com] during my routine lurking of#link("http://news.ycombinator.com")[hacker news] . After being amused for about 10 seconds,  I decided to take it to the next
+]
 
 = So you want to click that button?
 

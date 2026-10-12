@@ -1,11 +1,17 @@
 #let meta = (
   title: "Why MooTools (or Why not JQuery)",
   date: "2008-09-30",
+  created: "2008-09-30 10:26:00",
+  updated: "2025-01-28 01:56:23",
   tags: (),
   draft: false,
   redirect_from: "/blog/2008/09/30/why-mootools-or-why-not-jquery",
 )
 #context metadata((meta))
+
+#let excerpt = [
+  I’ve been toying around with MooTools a bit lately, and I’ve found the experience quite enjoyable and refreshing.
+]
 
 = Why MooTools (or Why not JQuery)
 

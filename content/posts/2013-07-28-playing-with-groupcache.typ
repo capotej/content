@@ -1,11 +1,17 @@
 #let meta = (
   title: "Playing with groupcache",
   date: "2013-07-28",
+  created: "2013-07-28 14:49:00",
+  updated: "2025-01-27 00:37:12",
   tags: ("databases", "distributed-computing", "go"),
   draft: false,
   redirect_from: "/blog/2013/07/28/playing-with-groupcache",
 )
 #context metadata((meta))
+
+#let excerpt = [
+  This week, #link("http://twitter.com/bradfitz")[\@bradfitz] (of memcached fame) released #link("http://github.com/golang/groupcache")[groupcache] at OSCON 2013. I'm already a big fan of #link("http://memcached")[memcached] and #link("http://camlistore.org")[camlistore], so I couldn't wait to download it and kick the tires.
+]
 
 = Playing with groupcache
 

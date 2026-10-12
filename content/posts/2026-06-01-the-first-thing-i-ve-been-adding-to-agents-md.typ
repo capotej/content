@@ -1,11 +1,19 @@
 #let meta = (
   title: "The first thing I've been adding to AGENTS.md",
   date: "2026-06-01",
+  created: "2026-06-01 00:27:17",
+  updated: "2026-06-01 00:31:34",
   tags: ("agents", "ai"),
   draft: false,
   redirect_from: "/blog/2026/06/01/the-first-thing-i-ve-been-adding-to-agents-md",
 )
 #context metadata((meta))
+
+#let excerpt = [
+  Dive into agentic coding long enough and value of a separating the planning process from the implementation process becomes obvious. These planning artifacts have many names and varying levels of complexity (".plan", "SPEC.md", "PRD", etc.), occasionally  even distributing skills to assist in creating and implementing them.
+
+  In this post I'll share a skill-free, lightweight version of this that has been working well for me lately.
+]
 
 = The first thing I've been adding to AGENTS.md
 

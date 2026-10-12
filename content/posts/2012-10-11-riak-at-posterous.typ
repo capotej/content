@@ -1,11 +1,17 @@
 #let meta = (
   title: "Riak at Posterous",
   date: "2012-10-11",
+  created: "2012-10-11 13:47:00",
+  updated: "2025-01-28 01:50:10",
   tags: ("posterous", "presentation", "riak"),
   draft: false,
   redirect_from: "/blog/2012/10/11/riak-at-posterous",
 )
 #context metadata((meta))
+
+#let excerpt = [
+  A few months ago, I gave a presentation on how Posterous uses Riak for it's post cache; At #link("http://basho.com/community/ricon2012/")[\#ricon2012] I ended up retelling this story to numerous people, so I thought I'd post the slides and video here.
+]
 
 = Riak at Posterous
 

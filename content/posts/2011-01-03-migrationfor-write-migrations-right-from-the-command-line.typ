@@ -1,11 +1,17 @@
 #let meta = (
   title: "MigrationFor: Write migrations right from the command line!",
   date: "2011-01-03",
+  created: "2011-01-03 09:48:00",
+  updated: "2025-01-28 01:54:38",
   tags: (),
   draft: false,
   redirect_from: "/blog/2011/01/03/migrationfor-write-migrations-right-from-the-command-line",
 )
 #context metadata((meta))
+
+#let excerpt = [
+  As someone who mostly stays in the rails console, I’ve always hated forgetting a field, creating a migration, finding it among your other 500 migration files, then adding the one line you need to add, then running it.
+]
 
 = MigrationFor: Write migrations right from the command line!
 

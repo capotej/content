@@ -1,11 +1,17 @@
 #let meta = (
   title: "Automatic High Quality Releases",
   date: "2012-11-13",
+  created: "2012-11-13 21:31:00",
+  updated: "2025-01-28 01:48:52",
   tags: ("finatra", "shell-scripting"),
   draft: false,
   redirect_from: "/blog/2012/11/13/automatic-high-quality-releases",
 )
 #context metadata((meta))
+
+#let excerpt = [
+  Recently, I invested some time into automating some of the work that goes into a #link("http://github.com/capotej/finatra#readme")[Finatra] release.
+]
 
 = Automatic High Quality Releases
 

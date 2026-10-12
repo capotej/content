@@ -1,11 +1,17 @@
 #let meta = (
   title: "What I released in 2010",
   date: "2010-12-31",
+  created: "2010-12-31 13:29:00",
+  updated: "2025-01-26 13:48:33",
   tags: (),
   draft: false,
   redirect_from: "/blog/2010/12/31/what-i-released-in-2010",
 )
 #context metadata((meta))
+
+#let excerpt = [
+  Here’s a recap of what I’ve worked on and released in 2010:  \#\#\##link("https://github.com/capotej/youtube_fraiche")[Youtube Fraiche] I couldn’t find a youtube downloader that worked on github,
+]
 
 = What I released in 2010
 

@@ -1,11 +1,17 @@
 #let meta = (
   title: "Golang HTTP Handlers as Middleware",
   date: "2013-10-07",
+  created: "2013-10-07 08:52:00",
+  updated: "2025-01-28 01:48:23",
   tags: ("go", "http"),
   draft: false,
   redirect_from: "/blog/2013/10/07/golang-http-handlers-as-middleware",
 )
 #context metadata((meta))
+
+#let excerpt = [
+  Most modern web stacks allow the "filtering" of requests via stackable/composable middleware, allowing you to cleanly separate cross-cutting concerns from your web application. This weekend I needed to hook into go's `http.FileServer` and was pleasantly surprised how easy it was to do.
+]
 
 = Golang HTTP Handlers as Middleware
 

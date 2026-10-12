@@ -1,11 +1,17 @@
 #let meta = (
   title: "Arrow key navigation for text fields",
   date: "2008-10-12",
+  created: "2008-10-12 17:41:00",
+  updated: "2025-01-28 01:54:57",
   tags: (),
   draft: false,
   redirect_from: "/blog/2008/10/12/arrow-key-navigation-for-text-fields",
 )
 #context metadata((meta))
+
+#let excerpt = [
+  Here is a class for enabling the use of arrow keys to navigate through a grid of input fields: (using mootools)
+]
 
 = Arrow key navigation for text fields
 

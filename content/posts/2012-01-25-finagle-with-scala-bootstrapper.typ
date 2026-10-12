@@ -1,11 +1,17 @@
 #let meta = (
   title: "Finagle with scala-bootstrapper",
   date: "2012-01-25",
+  created: "2012-01-25 09:45:00",
+  updated: "2025-01-26 13:48:33",
   tags: "scala",
   draft: false,
   redirect_from: "/blog/2012/01/25/finagle-with-scala-bootstrapper",
 )
 #context metadata((meta))
+
+#let excerpt = [
+  I've been fascinated by the concepts in #link("http://twitter.github.com/finagle/")[finagle] for some time, but being a scala noob, I never knew how to bootstrap a finagle project.
+]
 
 = Finagle with scala-bootstrapper
 
