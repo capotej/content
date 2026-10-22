@@ -48,7 +48,11 @@ eval of that marker. Fields by section:
 
 - `content/posts/YYYY-MM-DD-slug.typ` — title (str), date (str `YYYY-MM-DD`,
   must match the filename prefix), tags (array of str), draft (bool). Permalink:
-  `/{y}/{m}/{d}/{slug}/`. Optional `redirect_from` (str or array of str,
+  `/{y}/{m}/{d}/{slug}/`. Tags must be URL slugs (lowercase alphanumerics,
+  single interior hyphens) — the build fails loud otherwise. Each tag gets a
+  `/t/<tag>/` index page (posts newest first), and `# tag` pills linking to
+  those pages render on the home listing, on tag pages, and at the bottom of
+  every post page. Optional `redirect_from` (str or array of str,
   legacy paths starting with `/`) emits lines into `_redirects`.
 - `content/links/YYYY-MM-DD-slug.typ` — title, date, url (str), note body.
   Permalink: `/links/{slug}/`.
