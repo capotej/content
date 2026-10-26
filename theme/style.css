@@ -54,9 +54,12 @@ footer { border-top: 1px solid var(--line); padding: 1rem;
          font-size: 0.85em; opacity: 0.7; }
 footer > * { max-width: var(--measure); margin-left: auto; margin-right: auto; }
 time { display: block; font-size: 0.85em; opacity: 0.7; margin: 0.2rem 0 1rem; }
-/* home listing: bigger title, tight muted date beneath */
+/* home listing: bigger title, tight muted date beneath, no bullets */
 main > ul > li > a.post-title { display: block; font-size: 1.25em; }
 main > ul > li > time { margin: 0.1rem 0 0.55rem; opacity: 0.6; }
+main > ul { list-style: none; padding: 0; }
+main > ul > li { margin-bottom: 1.75rem; }
+main > ul > li:last-child { margin-bottom: 0; }
 p.more { margin: 0.1rem 0; font-size: 0.9em; }
 .excerpt { margin: 0.35rem 0 0.9rem; font-size: 0.92em; opacity: 0.85; }
 .excerpt p { margin: 0 0 0.5rem; }
