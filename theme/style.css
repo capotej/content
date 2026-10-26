@@ -42,7 +42,7 @@ header { border-bottom: 1px solid var(--line);
          padding: 2rem 1rem 1rem; margin-bottom: 2rem; }
 header > * { max-width: var(--measure); margin-left: auto; margin-right: auto; }
 header h1 { margin: 0 0 0.75rem; font-size: 1.35em; }
-header > a { color: inherit; text-decoration: none; }
+header > a { display: block; color: inherit; text-decoration: none; }
 /* listing titles + read-more: no underline; body links stay underlined */
 main > ul > li > a { text-decoration: none; }
 p.more a { text-decoration: none; }
