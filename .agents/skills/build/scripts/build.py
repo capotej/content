@@ -364,7 +364,7 @@ def main():
     def post_listing(items, header):
         """Home listing: date + title per post, with the excerpt (if any)
         rendered beneath — mirrors the legacy Abbey front page."""
-        rows = ['<h2>' + h(header) + "</h2>", "<ul>"]
+        rows = ['<h2>' + h(header) + "</h2>", '<ul class="posts">']
         for p in sorted(items, key=lambda p: p["created"], reverse=True):
             rows.append('<li><a class="post-title" href="{}">{}</a>'.format(
                 h(p["url"]), h(p["title"])))
