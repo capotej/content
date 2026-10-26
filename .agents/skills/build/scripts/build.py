@@ -43,9 +43,9 @@ SITE_NAME = "Julio Capote's Blog"
 BASE_URL = "https://capotej.com"
 
 NAV = (
-    '<nav><a href="/">Home</a> | <a href="/presentations/">Presentations</a> | '
-    '<a href="/projects/">Projects</a> | <a href="/links/">Links</a> | '
-    '<a href="/papers/">Papers</a> | <a href="/about/">About</a></nav>'
+    '<nav><a href="/">Home</a> <a href="/presentations/">Presentations</a> '
+    '<a href="/projects/">Projects</a> <a href="/links/">Links</a> '
+    '<a href="/papers/">Papers</a> <a href="/about/">About</a></nav>'
 )
 
 FOOTER = (
