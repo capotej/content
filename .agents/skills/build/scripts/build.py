@@ -366,8 +366,9 @@ def main():
         rendered beneath — mirrors the legacy Abbey front page."""
         rows = ['<h2>' + h(header) + "</h2>", "<ul>"]
         for p in sorted(items, key=lambda p: p["created"], reverse=True):
-            rows.append("<li>{} — <a href=\"{}\">{}</a>".format(
-                h(p["date"]), h(p["url"]), h(p["title"])))
+            rows.append('<li><a class="post-title" href="{}">{}</a>'.format(
+                h(p["url"]), h(p["title"])))
+            rows.append("<time>" + h(p["date"]) + "</time>")
             if p["excerpt"]:
                 rows.append('<div class="excerpt">' + p["excerpt"] + "</div>")
             rows.append(tag_pills(p["tags"]))
