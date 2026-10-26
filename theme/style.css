@@ -65,7 +65,7 @@ main ul.posts > li { margin-bottom: 0; padding-bottom: 1.75rem;
                      border-bottom: 1px solid var(--line); }
 main ul.posts > li + li { padding-top: 1.75rem; }
 main ul.posts > li:last-child { border-bottom: none; padding-bottom: 0; }
-main ul.posts > li > ul.tags { display: inline-flex; margin: 0.9rem 0 0;
+main ul.posts > li > ul.tags { display: inline-flex; margin: 0;
                                vertical-align: middle; }
 main ul.posts > li > p.more { display: inline; margin: 0 0 0 1rem;
                               vertical-align: middle; }
