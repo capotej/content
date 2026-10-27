@@ -385,7 +385,8 @@ def main():
             end = body.find("</h2>")
             if end != -1:
                 body = body[end + len("</h2>"):].lstrip()
-        cite = h(l["out_url"]) + " · <time>" + h(l["date"]) + "</time>"
+        cite = ('<a href="{url}">{url}</a> <time>{date}</time>').format(
+            url=h(l["out_url"]), date=h(l["date"]))
         return """<li><a class="post-title" href="{url}">{title}<svg class="icon-external" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
 <p class="cite">{cite}</p>
 {body}
