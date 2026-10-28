@@ -360,12 +360,6 @@ def main():
                 if not pdf:
                     die("papers need a pdf_url (external pdf link): "
                         + str(rel))
-                # Papers have no detail page; redirect_from points at the
-                # outbound pdf so legacy local URLs do not 404.
-                rf = meta.get("redirect_from")
-                if rf:
-                    olds = [rf] if isinstance(rf, str) else list(rf)
-                    redirects += ["{}    {}".format(o, pdf) for o in olds]
                 published["papers"].append({
                     "date": meta.get("date", ""),
                     "title": title,

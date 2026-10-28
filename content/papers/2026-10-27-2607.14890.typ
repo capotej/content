@@ -3,7 +3,6 @@
   date: "2026-10-27",
   arxiv_id: "2607.14890",
   pdf_url: "https://arxiv.org/pdf/2607.14890",
-  redirect_from: "/links/proof-or-stop-don-t-trust-the-agent-trust-the-evidence-loop/",
 )
 #context metadata((meta))
 
